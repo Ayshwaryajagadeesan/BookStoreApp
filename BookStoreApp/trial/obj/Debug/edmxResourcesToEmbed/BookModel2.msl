@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookDatabaseModel2StoreContainer" CdmEntityContainer="BookDatabaseEntities2">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="BookDatabaseModel2.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="BooksID" ColumnName="BooksID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="BookDescription" ColumnName="BookDescription" />
+          <ScalarProperty Name="BookImage" ColumnName="BookImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookTables">
+      <EntityTypeMapping TypeName="BookDatabaseModel2.BookTable">
+        <MappingFragment StoreEntitySet="BookTable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="SP" ColumnName="SP" />
+          <ScalarProperty Name="info" ColumnName="info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookTable1">
+      <EntityTypeMapping TypeName="BookDatabaseModel2.BookTable1">
+        <MappingFragment StoreEntitySet="BookTable1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="SP" ColumnName="SP" />
+          <ScalarProperty Name="info" ColumnName="info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="BookDatabaseModel2.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

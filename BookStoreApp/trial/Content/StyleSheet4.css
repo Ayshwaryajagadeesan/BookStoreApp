@@ -1,0 +1,193 @@
+﻿body {
+	background: #181818;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+.highlight {
+	color: #3498DB;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+.close {
+	background-color: #4CAF50;
+	border: none;
+	float: left;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 18px;
+	margin-bottom: 25px;
+	color: #AEB6BF;
+}
+
+	.title span {
+		color: #D4AC0D;
+	}
+
+.content {
+	max-width: 1200px;
+	margin: 30px auto;
+}
+
+.book-wrapper::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.book-picker {
+	width: 795px;
+	font-size: 0;
+	display: table-cell;
+}
+
+.book-chosen {
+	display: table-cell;
+	overflow: hidden;
+	width: 405px;
+	padding: 15px;
+	background: #1B2631;
+}
+
+.book-panel1 {
+	background: #1B2631;
+	display: table-cell;
+	overflow: hidden;
+}
+
+.book-panel {
+	background: #1B2631;
+	display: table-cell;
+	overflow: hidden;
+}
+
+	.book-panel h4 {
+		color: #D5D8DC;
+	}
+
+		.book-panel h4 .book-SP {
+			float: right;
+			color: #F7DC6F;
+		}
+
+	.book-panel .insufficientSP {
+		margin-top: 10px;
+		padding: 5px;
+		border: 1px solid #F57F17;
+		text-align: center;
+		font-size: 14px;
+		color: #FF8A65;
+	}
+
+	.book-panel .book-items li {
+		margin-top: 8px;
+		animation: fadeIn cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+	}
+
+	.book-panel .book-items span {
+		float: right;
+		line-height: 32px;
+		color: #D4AC0D;
+	}
+
+.book-picker ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.book-item {
+	/* flexbox? Never heard about it. Is it tasty? */
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: 1px solid transparent;
+	vertical-align: top;
+	background: #17202A;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background .1s ease-in;
+}
+
+	.book-item.picked {
+		border: 1px solid #D4AC0D;
+		background: #141313;
+	}
+
+		.book-item.picked::after {
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+			color: #F7DC6F;
+			content: '\02735';
+		}
+
+	.book-item:not(.picked):hover {
+		background: #0E141A;
+	}
+
+	.book-item h4 {
+		margin-bottom: 10px;
+		color: #D4AC0D;
+	}
+
+.book-description {
+	margin-top: 10px;
+	text-align: left;
+}
+
+	.book-description li {
+		font-size: 16px;
+		color: #D5D8DC;
+	}
+
+		.book-description li .book-value {
+			float: right;
+			color: #F7DC6F;
+		}
+
+		.book-description li .book-value1 {
+			float: right;
+			color: #F7DC6F;
+			display: none
+		}
+
+.book-info {
+	font-size: 14px;
+	color: #AEB6BF;
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

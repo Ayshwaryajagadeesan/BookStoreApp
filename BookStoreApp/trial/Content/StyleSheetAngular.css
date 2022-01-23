@@ -1,0 +1,17 @@
+﻿.body-content {
+	padding-top: 50px
+}
+
+.checkbox {
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown-menu {
+	overflow: auto !important;
+}
+
+.form-group div {
+	display: inline-block;
+	margin-right: 10px
+}
