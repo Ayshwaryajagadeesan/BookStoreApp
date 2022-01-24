@@ -14,3 +14,7 @@ BookStore Apps
 * [x] User can delete a previous selection and it is seen to be removed from the cart (implemented with React JS)
 
 Video Walk through of the project is below
+
+### App Walkthough GIF
+
+<img src="https://github.com/Ayshwaryajagadeesan/BookStoreApp/blob/main/BookStoreApp.gif" width=250><br>
